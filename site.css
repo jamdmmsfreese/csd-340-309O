@@ -1,0 +1,37 @@
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: Arial, Helvetica, sans-serif, serif;
+}
+
+h1, h2, h3, h4 {
+    background-color:cadetblue;
+    color:darkslategray;
+    border: 1px solid #d6a800;
+    padding: 10px;
+}
+
+h3 {
+    background-color:darkslategray;
+    color:lightgrey;
+}
+
+h4 {
+    background-color:darkslategray;
+    color:lightgrey;    
+}
+
+a:link {
+    text-decoration: none;
+    color:darkcyan;
+}
+
+a:visited {
+    color:black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:peru;
+}
