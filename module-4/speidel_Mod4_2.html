@@ -1,0 +1,120 @@
+<!-- Michele Speidel -->
+<!-- Assignment 4.2 -->
+<!-- April 2, 2023 -->
+<!-- Dr Cristy Cross -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Michele Speidel">
+    <meta name="assignment" content="Assignment 4.2 Build a Web Page - Part 4">
+    <meta name="description" content="demonstration of HTML and CSS functionality Part 4">
+    <meta name="keywords" content="Little Women, Flow, War and Peace">
+    <meta name="robots" content="nofollow">
+    <meta name="pragma" content="no-cache">
+    <title>CSD 340-309O Web Development with HTML and CSS</title>
+    <link href="speidel_Mod4_2.css" rel="stylesheet" type="text/css">
+    <!-- start of css class style -->
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 20px;
+        }
+            .grid-item {
+                font-size: 10px;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif, serif;
+            }
+
+        figure {
+            border: 1px #cccccc solid;
+            padding: 4px;
+            margin: auto;
+          }
+          
+        figcaption {
+            background-color: white;
+            color: rgba(22, 67, 22);
+            font-style: italic;
+            font-size: .75em;
+            padding: 2px;
+            text-align: center;
+        }
+    </style>
+    <!-- end of css class style -->
+</head>
+
+<body>
+    <div id="container"> 
+        <h1>Assignment 4.2: Build a Web Page Exercise - Part 4</h1>        
+    <!-- start image-gallery containing 3-images -->
+    <div id="image-gallery">
+        <div class="grid-container">
+
+            <!-- start image 1 -->
+            <div class="grid-item">
+                <figure>
+                    <h3>Little Women</h3>
+                    <img src="images/img-book-little-women.jpeg" alt="Book Little Women" style="width:25%">
+                    <figcaption>(author: Louisa May Alcott)</figcaption>
+                </figure>
+            </div>
+            <!-- end image 1 -->
+
+            <!-- start image 2 -->
+            <div class="grid-item">
+                <figure>
+                    <h3>Flow: The Psychology of Optimal Experience</h3>
+                    <img src="images/img-book-flow-the-psychology-of-optimal-experience.jpg" alt="Book Flow: The Psychology of Optimal Experience" style="width:25%">
+                    <figcaption>(author: Mihaly Csikszentmihalyi)</figcaption>
+                </figure>
+            </div>
+            <!-- end image 2 -->
+
+            <!-- start image 3 -->
+            <div class="grid-item">
+                <figure>
+                    <h3>War and Peace</h3>
+                    <img src="images/img-book-war-and-peace.jpg" alt="Book War and Peace" style="width:25%">
+                    <figcaption>(author: Leo Tolstoy)</figcaption>
+                    <!-- Book Translators -->
+                    <!-- (Translator: Richard Pevear) -->
+                    <!-- (Translator: Larissa Volokhonsky) -->
+                </figure>
+            </div>  
+            <!-- end image 3 -->
+        
+        </div>
+
+        <!-- page space and link back to landing page-->
+        <div class="pageSpace"></div>
+        <div class="LinkLanding">
+            <a href="../index.html">Back to Landing Page</a>
+        </div>
+    </div>  
+    <!-- end image-gallery-->
+    </div>   
+</body>
+</html>
+
+<!-- references -->
+
+<!-- CSS Tutorial; CSS Grid Layout Module. (2023). W3Schools. Retrieved March 31, 2023, from https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-row-gap -->
+
+<!-- Duckett, Jon.  (2022).  HTML & CSS; design and build websites. John Wiley & Sons, Inc. -->
+
+<!-- HTML Tutorial; HTML <figcaption> Tag. (2023). W3Schools. Retrieved March 31, 2023, from https://www.w3schools.com/tags/tag_figcaption.asp -->
+
+<!-- image references -->
+
+<!-- Flow: The Psychology of Optimal Experience Book Image. (2023). Barns & Noble Booksellers, Inc. Retrieved March 31, 2023, from
+https://www.barnesandnoble.com/w/flow-mihaly-csikszentmihalyi/1103371187?ean=9780061339202 -->
+
+<!-- Little Woman Book Image. (2023). Barns & Noble Booksellers, Inc. Retrieved March 31, 2023, from
+https://www.barnesandnoble.com/w/little-women-louisa-may-alcott/1132798825?ean=9781419751615 -->
+
+<!-- War and Peace Book Image. (2023). Barns & Noble Booksellers, Inc. Retrieved March 31, 2023, from
+https://www.barnesandnoble.com/w/war-and-peace-pevear-volokhonsky-translation-leo-tolstoy/1106029184?ean=9781400079988 -->
