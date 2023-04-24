@@ -1,0 +1,87 @@
+<!-- Michele Speidel -->
+<!-- Assignment 9.3 -->
+<!-- April 23, 2023 -->
+<!-- Instructor Cristy Cross -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Michele Speidel">
+    <meta name="assignment" content="Assignment 9.3 JavaScript - Part 1">
+    <meta name="description" content="demonstration of HTML and CSS functionality with JavaScript">
+    <meta name="keywords" content="my story, school, college, bellevue">
+    <meta name="robots" content="nofollow">
+    <meta name="pragma" content="no-cache">
+    <title>CSD 340-309O Web Development with HTML and CSS</title>
+    <link href="speidel_Mod2_2.css" rel="stylesheet" type="text/css">
+
+    <!--variables-->
+    <script>
+        var firstVariableValue = "delicious";
+        var SecondVariableValue = "wonderful";
+        var thirdVariableValue = "many";
+        var fourthVariableValue = "small";
+    </script>
+</head>
+
+    <body>
+        <h1>Assignment 9.3: JavaScript - Part 1</h1>
+
+        <!--start story-->
+        <p>
+            The bakery has some great stuff baking up.  They sell a wide variety of 
+            <span id = "delicious">_________</span> baked goods for daily consumption or for 
+            <span id = "wonderful">_________</span> special events 
+            such as weddings, graduations, or birthdays.
+        </p>
+
+        <p>
+            They have had their small-town store front for <span id = "many">____</span> years.
+        </p>
+
+        <p>
+            They have now decided to expand their <span id = "small">_____</span> bakery operations.  
+            They want to offer delicious baked goods, special offers, and delivery services to 
+            online customers through a new website.
+        </p>
+        <!--end story-->
+        
+            <!--start buttons to insert variables into story-->
+            <p>
+                <button type ="button"
+                onclick="document.getElementById('delicious').innerHTML =
+                firstVariableValue">delicious</button> <br>
+            </p>
+
+            <p>
+                <button type ="button"
+                onclick="document.getElementById('wonderful').innerHTML =
+                SecondVariableValue">wonderful</button> <br>
+            </p>
+
+            <p>
+                <button type ="button"
+                onclick="document.getElementById('many').innerHTML =
+                thirdVariableValue">many</button> <br>
+            </p>
+
+            <p>
+                <button type ="button"
+                onclick="document.getElementById('small').innerHTML =
+                fourthVariableValue">small</button> <br>
+            </p>
+            <!--end buttons to insert variables into story-->
+
+        <hr>
+
+        <!-- start of address -->
+        <address>
+            <p><a href="https://www.bellevue.edu" target="_blank"> Bellevue University</a><br>
+            1000 Galvin Rd S<br>
+            Bellevue, NE 68005</p>
+        </address>
+        <!-- end of address -->
+    </body>
+</html>
