@@ -1,0 +1,149 @@
+<!-- Michele Speidel -->
+<!-- Assignment 10.3 -->
+<!-- April 30, 2023 -->
+<!-- Dr Cristy Cross -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340-309O Web Development with HTML and CSS</title>
+    <link rel='stylesheet' type='text/css' href="speidel_Mod2_2.css">
+
+    <!-- start script -->
+    <script>
+        function displayImage(imageFile){
+          var largerImage = document.getElementById("mainImage");
+          var newNode = document.createElement("img");
+          newNode.id = "mainImage";
+          newNode.src = imageFile;
+          newNode.alt = "Large Image";
+          newNode.className = "mainImage";
+          newNode.style.width = "300px";
+          newNode.style.height = "220px";
+          largerImage.parentNode.replaceChild(newNode, largerImage);
+        }
+      </script>
+      <!-- end script -->
+
+      <!-- start style -->
+      <style>
+        h1 {
+          text-align: center;
+        }
+      </style>
+      <!-- start style -->
+</head>
+
+<body>
+  <h1>Assignment 10.3: JavaScript Exercise, Part 2</h1>
+
+  <br />
+  <!-- start 1 friends image front to back -->
+  <div>
+    <a href=#
+       onmouseover="friendFrontTwo.src='img-bio-friends-back-01-02.jpg';"
+       onmouseout= "friendFrontTwo.src='img-bio-friends-front-01-02.jpg';"
+      >
+      <img border = 0 name = "friendFrontTwo" src = "img-bio-friends-front-01-02.jpg">
+      </a>
+    </div>
+    <br />
+    <div
+       onmouseover="this.style.color='red';"
+       onmouseout= "this.style.color='black';">
+
+      Run your mouse over the image to change.
+    <br />
+    <br />
+    </div>
+    <!-- end 1 friends image front to back -->
+
+    <br />
+
+    <!-- start 2 friends front image from color to black/white warm -->
+    <div>
+      <a href=#
+         onmouseover="friendFront.src='img-bio-friends-front-02-bw-warm.jpg';"
+         onmouseout= "friendFront.src='img-bio-friends-front-01.jpg';"
+      >
+        <img border = 0 name = "friendFront" src = "img-bio-friends-front-01.jpg">
+      </a>
+    </div>
+    <br />
+    <div
+         onmouseover="this.style.color='red';"
+         onmouseout= "this.style.color='black';">
+
+      Run your mouse over the image to change.
+      <br />
+      <br />
+    </div>
+    <!-- end 2 friends front image from color to black/white warm -->
+
+    <!-- start 3 friends back image from black/white warm to color -->
+    <div>
+      <a href=#
+         onmouseover="friendBack.src='img-bio-friends-back-01.jpg';"
+         onmouseout= "friendBack.src='img-bio-friends-back-02-bw-warm.jpg';"
+      >
+        <img border = 0 name = "friendBack" src = "img-bio-friends-back-02-bw-warm.jpg">
+      </a>
+    </div>
+    <br />
+    <div
+         onmouseover="this.style.color='red';"
+         onmouseout= "this.style.color='black';">
+
+      Run your mouse over the image to change.
+      <br />
+      <br />
+    </div>
+    <!-- end 3 friends back image from black/white warm to color -->
+
+    <br />
+  <!-- start 4 cave from color to negative -->
+    <div>
+      <a href=#
+         onmouseover="cave.src='cave_01.jpg';"
+         onmouseout= "cave.src='cave_02.jpg';"
+      >
+        <img border = 0 name = "cave" src = "cave_02.jpg">
+      </a>
+    </div>
+    <br />
+    <div
+         onmouseover="this.style.color='red';"
+         onmouseout= "this.style.color='black';">
+
+      Run your mouse over the image to change.
+      <br />
+      <br />
+    </div>
+    <!-- end 4 cave from color to negative -->
+
+    <!-- start 5 moon from color to negative -->
+    <div>
+      <a href=#
+         onmouseover="moon.src='moon_01.jpg';"
+         onmouseout= "moon.src='moon_02.jpg';"
+      >
+        <img border = 0 name = "moon" src = "moon_02.jpg">
+      </a>
+    </div>
+    <br />
+    <div
+         onmouseover="this.style.color='red';"
+         onmouseout= "this.style.color='black';">
+
+      Run your mouse over the image to change.
+      <br />
+      Right-click and select View Source for more details.
+    </div>
+    <!-- end 5 moon from color to negative -->
+    
+</body>
+
+</html>
+
