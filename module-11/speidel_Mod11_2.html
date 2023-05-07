@@ -1,0 +1,97 @@
+<!-- Michele Speidel -->
+<!-- Assignment 11.2 -->
+<!-- May 7, 2023 -->
+<!-- Dr Cristy Cross -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340-309O Web Development with HTML and CSS</title>
+
+    <!-- start script -->
+    <script>
+
+      var x = 0;
+
+      //create array
+      var array = Array();
+        
+      //fill array
+      function add_item_to_array()
+      {
+        array[x] = document.getElementById("text1").value;
+        alert("Item: " + array[x] + " Added at index " + x);
+        x++;
+        document.getElementById("text1").value = "";
+      }
+     
+      //remove last item from array
+      function myFunction() 
+      {
+        array.pop();
+      }
+
+      //display array
+      function display_array()
+      {
+        var items = "<hr/><b>To Do List:</b><br>";   
+            
+          for (var y=0; y<array.length; y++)
+          {
+            items += "Item " + (y+1) + " = " + array[y] + "<br/>";
+          }
+        document.getElementById("Result").innerHTML = items;
+      }
+    </script>
+    <!-- end script -->
+
+    <!-- start style -->
+    <style>
+      h1 
+      {
+        text-align: center;
+      }
+    </style>
+    <!-- end style -->
+</head>
+
+<body>
+    <h1>Assignment 11.2: JavaScript Exercise, Part 3</h1>
+
+    <!-- start program instruction -->
+    <br>
+    <p>This is an interactive To Do List.</p>
+    <p>INSTRUCTIONS:</p>
+    <p>STEP 1: Type an item in the "Input" box</p>
+    <p>STEP 2: Click the "Add" button (a pop-up window will appear showing what was added and at  which index - click "OK")</p>
+    <p>Repeat STEP 2 to add more items</p>
+    <p>STEP 3: When you are done adding items, click the "Display" button to see current items in the list</p>
+    <p>STEP 4: Click the "Delete Last Item" button if you would like to remove the last item, then click "Display" to update the list (repeat STEP 4 as needed)</p>
+    <p>Note to user: Deleted items will show as "undefined" if some of the above steps are done out of sequence. <br>
+      If you click the "Add" button with no input, the item added will = [blank].</p>
+
+    <br>   
+
+    <!-- start entry and buttons -->
+    <label>Input:</label>
+    <input type="text" id="text1">
+    <input type="button" id="button1" value="Add" onclick="add_item_to_array();">
+    <input type="button" id="button2" value="Display" onclick="display_array();">
+    <button onclick="myFunction()">Delete Last Item</button>
+    <!-- start entry and buttons -->
+
+    <div id="Result"></div> 
+
+</body>
+
+</html>
+
+<!-- references -->
+
+<!--N/L. (2023). JavaScript: Add Items in a Blank Array and Display the Items. w3resources.com. Retrieved May 7, 2023, from
+https://www.w3resource.com/javascript-exercises/javascript-array-exercise-13.php -->
+
+<!--N/L. (2023). Remove Array Elements in JavaScript. TechFunda.com. Retrieved May 7, 2023, from
+https://techfunda.com/howto/921/remove-array-elements-->
