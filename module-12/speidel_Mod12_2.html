@@ -1,0 +1,113 @@
+<!-- Michele Speidel -->
+<!-- Assignment 12.2 -->
+<!-- May 14, 2023 -->
+<!-- Dr Cristy Cross -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Michele Speidel">
+    <meta name="assignment" content="Assignment 12.2 JavaScript Exercise - Part 4">
+    <meta name="description" content="demonstration of HTML and CSS with JavaScript functionality Part 4">
+    <meta name="keywords" content="favorite, books, learned">
+    <meta name="robots" content="nofollow">
+    <meta name="pragma" content="no-cache">
+    <title>CSD 340-309O Web Development with HTML and CSS</title>
+    <link href="speidel_Mod12_2.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+    <!--start array of favorite books-->
+    <script>
+        let favoriteBooks = [
+        "1. Little Women", 
+        "2. Where the Crawdads Sing",
+        "3. Hunger Games",
+        "4. Red Rising",
+        "5. Flow: The Psychology of Optimal Experience",
+        "6. Babel",
+        "7. War and Peace",
+        "8. Macbeth",
+        "9. Little House on the Prairie",
+        "10. The Pokey Little Puppy"
+        ];
+    </script>
+    <!--start array of favorite books-->
+
+    <div id="container">
+        <h1>Assignment 12.2: JavaScript Exercise, Part 4</h1>
+        <!-- start of div for list containers -->
+        <div class="boxContainer">
+            <!-- start of left list container -->
+            <div class="divLeft">
+                <h3>Top 10 Favorite Books</h3>
+                <p>Click the "Top to Bottom" button to see book list in ascending order</p>
+                <p>Click the "Bottom to Top" button to see book list in descending order</p>
+                <p>For the best results, click the "refresh" circle by the URL for each sort click</p>
+                <!--sort buttons-->
+                <button onclick="sortItemsAscending()">Top to Bottom</button>
+                <button onclick="sortItemsDescending()">Bottom to Top</button>
+
+                <hr>
+                <p Id="result"></p>
+                <!--sort books asc or desc-->
+                <script>  
+                    function sortItemsAscending(){
+                        var sorted = favoriteBooks.sort(function(a, b){return a-b});
+                            favoriteBooks.forEach(el => {
+                                document.getElementById('result').innerHTML += `<div>${el}</div>`;
+                            });
+                        };
+
+                    function sortItemsDescending(){
+                        var sorted = favoriteBooks.reverse();
+                            favoriteBooks.forEach(el => {
+                                document.getElementById('result').innerHTML += `<div>${el}</div>`;
+                            });
+                        };
+                </script>
+
+            </div>
+            <!-- end of left list container -->
+            <!-- start of right list container -->
+            <div class="divRight">
+                <h3>5 Things I've Learned Since the Course Started</h3>
+                <ul>
+                    <li>Coding techniques with HTML & CSS</li>
+                    <li>Designing web pages</li>
+                    <li>Psychology is important to web design</li>
+                    <li>HTML & CSS code validation</li>
+                    <li>Design with the user in mind</li>
+                </ul>
+            </div> 
+            <!-- start of right list container -->
+        </div>
+        <!-- end of div for list containers -->
+
+        <!-- page space and link back to landing page-->
+        <div class="pageSpace">
+        </div>
+        <div class="LinkLanding">
+            <a href="../index.html">Back to Landing Page</a>
+        </div>
+     </div>
+    
+</body>
+</html>
+
+<!-- references -->
+<!-- Duckett, Jon.  (2022).  HTML & CSS; design and build websites. John Wiley & Sons, Inc. -->
+
+<!--Diwan, Amit.  (2020).  Tutorialspoint (2023).
+    Retrieved May 14, 2023, from
+    https://www.tutorialspoint.com/display-array-items-on-a-div-element-on-click-of-button-using-vanilla-javascript
+-->
+
+<!-- (N/A). (2020). 3 Ways to Display Two divs Side by Side (Float, Flexbox, CSS Grid). Coder-Coder. 
+    Retrieved March 25, 2023, from 
+    https://coder-coder.com/display-divs-side-by-side/
+-->   
+
